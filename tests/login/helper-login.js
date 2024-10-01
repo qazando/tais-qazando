@@ -11,7 +11,7 @@ async function login(page) {
     await page.locator('#user').fill(emailfake);
     await page.locator('#password').fill('123456');
     await page.getByRole('button', { name: 'login' }).click();
-    await expect(page.getByText('Olá, qazando@gmail.com')).toBeVisible();
+    await expect(page.getByText('Olá, ' + emailfake)).toBeVisible();
 }
 
 module.exports = {
