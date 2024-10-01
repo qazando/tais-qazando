@@ -1,7 +1,8 @@
-name: Pipe Manual
+name: Daily UI Tests
 
 on:
-  workflow_dispatch
+  schedule:
+    - cron: '0 10 * * 1-5'
 
 jobs:
   test:

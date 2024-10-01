@@ -1,7 +1,7 @@
-name: Pipeline de teste da tais - Por pull request
+name: Pipe Pull Request
 
 on:
-  push:
+  pull_request:
     branches: [ main, master ]
 
 jobs:

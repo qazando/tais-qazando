@@ -1,7 +1,8 @@
-name: Pipe Manual
+name: Pipe PUSH
 
 on:
-  workflow_dispatch
+  push:
+    branches: [ main, master ]
 
 jobs:
   test:
